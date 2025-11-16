@@ -85,7 +85,7 @@ pnpm lint
 You can adjust the shuffle animation behavior by modifying constants in `src/App.tsx`:
 
 ```tsx
-const SHUFFLE_DURATION_MS = 2500; // Total shuffle duration (milliseconds)
+const SHUFFLE_DURATION_MS = 1500; // Total shuffle duration (milliseconds)
 const SHUFFLE_STEP_MS = 140; // Interval between shuffle updates (milliseconds)
 ```
 

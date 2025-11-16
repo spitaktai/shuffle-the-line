@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import './App.css'
 
 const MAX_PARTICIPANTS = 10
-const SHUFFLE_DURATION_MS = 2500
+const SHUFFLE_DURATION_MS = 1500
 const SHUFFLE_STEP_MS = 140
 
 const createEmptyNames = () =>
