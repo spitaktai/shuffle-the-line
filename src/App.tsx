@@ -91,22 +91,17 @@ function App() {
     setFinalOrder([])
   }
 
-  const handleResetRanking = () => {
+  const handleResetAll = () => {
     stopShuffle()
     setDisplayOrder([])
     setFinalOrder([])
-  }
-
-  const handleResetAll = () => {
-    handleResetRanking()
     setNames(() => createEmptyNames())
   }
 
   const activeParticipants = toParticipants(names)
   const canShuffle = activeParticipants.length >= 2 && !isShuffling
-  const canResetRanking = isShuffling || displayOrder.length > 0
   const canResetAll =
-    names.some((name) => name.trim().length > 0) || canResetRanking
+    names.some((name) => name.trim().length > 0) || isShuffling || displayOrder.length > 0
   const queueStatus = isShuffling
     ? 'Shuffling…'
     : finalOrder.length
@@ -155,14 +150,6 @@ function App() {
               disabled={!canShuffle}
             >
               {shuffleLabel}
-            </button>
-            <button
-              className="button button--secondary"
-              type="button"
-              onClick={handleResetRanking}
-              disabled={!canResetRanking}
-            >
-              Reset ranking
             </button>
             <button
               className="button button--ghost"
