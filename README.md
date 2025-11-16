@@ -4,7 +4,7 @@ A lightweight, animated queue randomizer that brings fairness and fun to orderin
 
 ## ✨ Features
 
-- **Up to 10 Participants** – Add names in designated input fields with character limits
+- **Up to 5 Participants** – Add names in designated input fields with character limits
 - **Animated Shuffling** – Visually engaging animation that cycles through random orders before revealing the final lineup
 - **Dual Reset Options** – Clear just the ranking or reset everything for a fresh start
 - **Real-time Validation** – Live participant count and intelligent button states
@@ -94,7 +94,7 @@ const SHUFFLE_STEP_MS = 140; // Interval between shuffle updates (milliseconds)
 Modify the `MAX_PARTICIPANTS` constant in `src/App.tsx`:
 
 ```tsx
-const MAX_PARTICIPANTS = 10; // Default: 10
+const MAX_PARTICIPANTS = 5; // Default: 5
 ```
 
 ## 📁 Project Structure
