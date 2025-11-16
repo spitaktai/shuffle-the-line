@@ -85,8 +85,8 @@ pnpm lint
 You can adjust the shuffle animation behavior by modifying constants in `src/App.tsx`:
 
 ```tsx
-const SHUFFLE_DURATION_MS = 2500  // Total shuffle duration (milliseconds)
-const SHUFFLE_STEP_MS = 140       // Interval between shuffle updates (milliseconds)
+const SHUFFLE_DURATION_MS = 2500; // Total shuffle duration (milliseconds)
+const SHUFFLE_STEP_MS = 140; // Interval between shuffle updates (milliseconds)
 ```
 
 ### Changing Maximum Participants
@@ -94,7 +94,7 @@ const SHUFFLE_STEP_MS = 140       // Interval between shuffle updates (milliseco
 Modify the `MAX_PARTICIPANTS` constant in `src/App.tsx`:
 
 ```tsx
-const MAX_PARTICIPANTS = 10  // Default: 10
+const MAX_PARTICIPANTS = 10; // Default: 10
 ```
 
 ## 📁 Project Structure
